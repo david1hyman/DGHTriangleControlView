@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "TriangleControlView.h"
+
 @interface ViewController ()
 
 @end
@@ -18,6 +20,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    CGFloat size = 300.0f;
+    CGFloat originX = (self.view.frame.size.width - size)/2.0f;
+    TriangleControlView *tcv = [[TriangleControlView alloc] initWithFrame:CGRectMake(originX, 100.0f, size, size)];
+    [self.view addSubview:tcv];
 }
 
 - (void)didReceiveMemoryWarning

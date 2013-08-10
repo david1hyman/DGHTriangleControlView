@@ -19,6 +19,7 @@
 		50AC06CC17B53F12009C4DEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AC06CB17B53F12009C4DEB /* ViewController.m */; };
 		50AC06CF17B53F12009C4DEB /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50AC06CD17B53F12009C4DEB /* ViewController_iPhone.xib */; };
 		50AC06D217B53F12009C4DEB /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50AC06D017B53F12009C4DEB /* ViewController_iPad.xib */; };
+		50AC06DA17B53F27009C4DEB /* TriangleControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AC06D917B53F27009C4DEB /* TriangleControlView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		50AC06CB17B53F12009C4DEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		50AC06CE17B53F12009C4DEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		50AC06D117B53F12009C4DEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		50AC06D817B53F27009C4DEB /* TriangleControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleControlView.h; sourceTree = "<group>"; };
+		50AC06D917B53F27009C4DEB /* TriangleControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleControlView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				50AC06CD17B53F12009C4DEB /* ViewController_iPhone.xib */,
 				50AC06D017B53F12009C4DEB /* ViewController_iPad.xib */,
 				50AC06B917B53F12009C4DEB /* Supporting Files */,
+				50AC06D817B53F27009C4DEB /* TriangleControlView.h */,
+				50AC06D917B53F27009C4DEB /* TriangleControlView.m */,
 			);
 			path = TriangleController;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				50AC06BF17B53F12009C4DEB /* main.m in Sources */,
 				50AC06C317B53F12009C4DEB /* AppDelegate.m in Sources */,
 				50AC06CC17B53F12009C4DEB /* ViewController.m in Sources */,
+				50AC06DA17B53F27009C4DEB /* TriangleControlView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
