@@ -59,8 +59,8 @@ typedef void(^ValueChangeListener)(DGHTriangleControlView *traingleControlView);
 */
 
 + (DGHTriangleControlView *)triangleControlViewWithFrame:(CGRect)frame
-                                         ballDiameter:(CGFloat)ballDiameter
-                                             delegate:(id<TriangleControlViewDelegate>)delegate;
+                                            ballDiameter:(CGFloat)ballDiameter
+                                                delegate:(id<TriangleControlViewDelegate>)delegate;
 
 - (float)valueForVertex:(TriangleVertext)vertex;
 - (void)addTarget:(id)target action:(SEL)action;
@@ -68,10 +68,11 @@ typedef void(^ValueChangeListener)(DGHTriangleControlView *traingleControlView);
 
 @property (nonatomic, assign) id<TriangleControlViewDelegate>delegate;
 @property (nonatomic, assign) BOOL showGuideShapes;
+@property (nonatomic, assign) CGFloat diameter;
 @property (nonatomic, assign) CGFloat strokeWidth;
 @property (nonatomic, strong) UIColor *triangleBackgroundColor;
 @property (nonatomic, strong) UIColor *triangleStrokeColor;
 @property (nonatomic, strong) UIColor *ballColor;
-@property (nonatomic, assign) BOOL roundedCorners;
+@property (nonatomic, assign) BOOL roundedCorners;  // this is just a switch on/off, uses CGLineCap
 
 @end

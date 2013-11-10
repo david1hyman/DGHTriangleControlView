@@ -22,7 +22,6 @@ static const CGFloat defaultLineWidth  = 2.0f;
     BOOL _outOfBounds;
 }
 
-@property (nonatomic, assign) CGFloat diameter;
 @property (nonatomic, assign) CGPoint triangleCenter;
 @property (nonatomic, assign) CGPoint topCenter;
 @property (nonatomic, assign) CGPoint bottomLeft;
