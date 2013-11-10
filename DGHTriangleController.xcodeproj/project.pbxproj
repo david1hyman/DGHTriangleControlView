@@ -98,8 +98,7 @@
 				50AC06D817B53F27009C4DEB /* DGHTriangleControlView.h */,
 				50AC06D917B53F27009C4DEB /* DGHTriangleControlView.m */,
 			);
-			name = DGHTriangleController;
-			path = TriangleController;
+			path = DGHTriangleController;
 			sourceTree = "<group>";
 		};
 		50AC06B917B53F12009C4DEB /* Supporting Files */ = {
@@ -282,8 +281,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TriangleController/DGHTriangleController-Prefix.pch";
-				INFOPLIST_FILE = "TriangleController/DGHTriangleController-Info.plist";
+				GCC_PREFIX_HEADER = "DGHTriangleController/DGHTriangleController-Prefix.pch";
+				INFOPLIST_FILE = "DGHTriangleController/DGHTriangleController-Info.plist";
 				PRODUCT_NAME = DGHTriangleController;
 				WRAPPER_EXTENSION = app;
 			};
@@ -293,8 +292,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TriangleController/DGHTriangleController-Prefix.pch";
-				INFOPLIST_FILE = "TriangleController/DGHTriangleController-Info.plist";
+				GCC_PREFIX_HEADER = "DGHTriangleController/DGHTriangleController-Prefix.pch";
+				INFOPLIST_FILE = "DGHTriangleController/DGHTriangleController-Info.plist";
 				PRODUCT_NAME = DGHTriangleController;
 				WRAPPER_EXTENSION = app;
 			};
