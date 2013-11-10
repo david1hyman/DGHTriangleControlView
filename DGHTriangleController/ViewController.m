@@ -33,8 +33,8 @@
                                                                     ballDiameter:20.0f
                                                                         delegate:self];
     
-    tcv.roundedCorners = YES;
-    tcv.strokeWidth = 5.0f;
+    tcv.triangleRoundedCorners = YES;
+    tcv.triangleStrokeWidth = 5.0f;
     tcv.ballColor = [UIColor orangeColor];
     tcv.triangleBackgroundColor = [UIColor redColor];
     tcv.triangleStrokeColor = [UIColor purpleColor];

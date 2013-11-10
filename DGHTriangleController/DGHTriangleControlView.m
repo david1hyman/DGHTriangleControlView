@@ -72,7 +72,7 @@ static const CGFloat defaultLineWidth  = 2.0f;
         
         [self updateCalculations];
         
-        self.diameter = diameter;
+        self.ballDiameter = diameter;
     }
     return self;
 }
@@ -85,9 +85,9 @@ static const CGFloat defaultLineWidth  = 2.0f;
     [self updateCalculations];
 }
 
-- (void)setDiameter:(CGFloat)diameter {
-    NSAssert((diameter < self.frame.size.width/2.0f), @"DGHTriangleControlView: ball diameter is too big, must be less than half the width");
-    _diameter = diameter;
+- (void)setBallDiameter:(CGFloat)ballDiameter {
+    NSAssert((ballDiameter < self.frame.size.width/2.0f), @"DGHTriangleControlView: ball diameter is too big, must be less than half the width");
+    _ballDiameter = ballDiameter;
 }
 
 - (void)addTarget:(id)target action:(SEL)action {
@@ -101,14 +101,14 @@ static const CGFloat defaultLineWidth  = 2.0f;
 
 - (void)setDefaults {
     self.backgroundColor = [UIColor clearColor];
-    self.strokeWidth = defaultLineWidth;
+    self.triangleStrokeWidth = defaultLineWidth;
     self.triangleBackgroundColor = [UIColor lightGrayColor];
     self.triangleStrokeColor = [UIColor blackColor];
     self.ballColor = [UIColor redColor];
 }
 
-- (void)setStrokeWidth:(CGFloat)lineWidth {
-    _strokeWidth = lineWidth;
+- (void)setTriangleStrokeWidth:(CGFloat)lineWidth {
+    _triangleStrokeWidth = lineWidth;
     [self updateCalculations];
 }
 
@@ -130,8 +130,8 @@ static const CGFloat defaultLineWidth  = 2.0f;
  Someone should definitely mathify them.
 */
 - (void)updateCalculations {
-    _distance = self.frame.size.width - self.strokeWidth;
-    _radius = self.diameter/2.0f;
+    _distance = self.frame.size.width - self.triangleStrokeWidth;
+    _radius = self.ballDiameter/2.0f;
     
     // draw outer triangle
     [self calculateOuterPoints];
@@ -162,11 +162,11 @@ static const CGFloat defaultLineWidth  = 2.0f;
 }
 
 - (void)calculateOuterPoints {
-    self.bottomLeft = CGPointMake((self.strokeWidth/2.0f),
-                                  self.frame.size.height - (self.strokeWidth/2.0f));
+    self.bottomLeft = CGPointMake((self.triangleStrokeWidth/2.0f),
+                                  self.frame.size.height - (self.triangleStrokeWidth/2.0f));
 
-    self.bottomRight = CGPointMake(self.frame.size.width - (self.strokeWidth/2.0f),
-                                   self.frame.size.height - (self.strokeWidth/2.0f));
+    self.bottomRight = CGPointMake(self.frame.size.width - (self.triangleStrokeWidth/2.0f),
+                                   self.frame.size.height - (self.triangleStrokeWidth/2.0f));
     
     [self calculateTopCenter];
     
@@ -208,14 +208,14 @@ static const CGFloat defaultLineWidth  = 2.0f;
 
 - (void)calculateInsetPoints {
     self.insetTopCenter = CGPointMake(self.frame.size.width/2.0f,
-                                      self.topCenter.y + self.diameter + self.strokeWidth);
+                                      self.topCenter.y + self.ballDiameter + self.triangleStrokeWidth);
     
     [self calculateInsetBottomPoints];
 }
 
 - (void)calculateInsetBottomPoints {
     
-    const CGFloat yVal = self.bottomLeft.y - _radius - (self.strokeWidth/2.0f);
+    const CGFloat yVal = self.bottomLeft.y - _radius - (self.triangleStrokeWidth/2.0f);
     
     // y is constant so just move the x vals until the line segments are ~=
     // distance is linear in this case
@@ -309,9 +309,9 @@ static const CGFloat defaultLineWidth  = 2.0f;
 
 - (void)drawTriangleInContext:(CGContextRef)ctx {
     CGContextSaveGState(ctx);
-    CGContextSetLineWidth(ctx, self.strokeWidth);
-    CGContextSetLineCap(ctx, self.roundedCorners ? kCGLineCapRound : 0);
-    CGContextSetLineJoin(ctx, self.roundedCorners ? kCGLineJoinRound : 0);
+    CGContextSetLineWidth(ctx, self.triangleStrokeWidth);
+    CGContextSetLineCap(ctx, self.triangleRoundedCorners ? kCGLineCapRound : 0);
+    CGContextSetLineJoin(ctx, self.triangleRoundedCorners ? kCGLineJoinRound : 0);
     CGContextSetFillColorWithColor(ctx, self.triangleBackgroundColor.CGColor);
     CGContextSetStrokeColorWithColor(ctx, self.triangleStrokeColor.CGColor);
     CGContextAddPath(ctx, _trianglePath);
@@ -322,7 +322,7 @@ static const CGFloat defaultLineWidth  = 2.0f;
 - (void)drawCircleInContext:(CGContextRef)ctx {
     CGContextSaveGState(ctx);
     CGPoint topLeftPoint = CGPointMake(_touchPoint.x - _radius, _touchPoint.y - _radius);
-    CGRect boundingRectForDot = CGRectMake(topLeftPoint.x, topLeftPoint.y, self.diameter, self.diameter);
+    CGRect boundingRectForDot = CGRectMake(topLeftPoint.x, topLeftPoint.y, self.ballDiameter, self.ballDiameter);
     CGContextSetFillColorWithColor(ctx, self.ballColor.CGColor);
     CGContextFillEllipseInRect(ctx, boundingRectForDot);
     CGContextRestoreGState(ctx);
