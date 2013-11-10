@@ -19,18 +19,18 @@
 		50AC06CC17B53F12009C4DEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AC06CB17B53F12009C4DEB /* ViewController.m */; };
 		50AC06CF17B53F12009C4DEB /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50AC06CD17B53F12009C4DEB /* ViewController_iPhone.xib */; };
 		50AC06D217B53F12009C4DEB /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50AC06D017B53F12009C4DEB /* ViewController_iPad.xib */; };
-		50AC06DA17B53F27009C4DEB /* TriangleControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AC06D917B53F27009C4DEB /* TriangleControlView.m */; };
+		50AC06DA17B53F27009C4DEB /* DGHTriangleControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AC06D917B53F27009C4DEB /* DGHTriangleControlView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		50AC06AF17B53F12009C4DEB /* TriangleController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriangleController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AC06AF17B53F12009C4DEB /* DGHTriangleController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DGHTriangleController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50AC06B217B53F12009C4DEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50AC06B417B53F12009C4DEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		50AC06B617B53F12009C4DEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		50AC06BA17B53F12009C4DEB /* TriangleController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TriangleController-Info.plist"; sourceTree = "<group>"; };
+		50AC06BA17B53F12009C4DEB /* DGHTriangleController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DGHTriangleController-Info.plist"; sourceTree = "<group>"; };
 		50AC06BC17B53F12009C4DEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50AC06BE17B53F12009C4DEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		50AC06C017B53F12009C4DEB /* TriangleController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TriangleController-Prefix.pch"; sourceTree = "<group>"; };
+		50AC06C017B53F12009C4DEB /* DGHTriangleController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DGHTriangleController-Prefix.pch"; sourceTree = "<group>"; };
 		50AC06C117B53F12009C4DEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50AC06C217B53F12009C4DEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		50AC06C417B53F12009C4DEB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -40,8 +40,8 @@
 		50AC06CB17B53F12009C4DEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		50AC06CE17B53F12009C4DEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		50AC06D117B53F12009C4DEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		50AC06D817B53F27009C4DEB /* TriangleControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleControlView.h; sourceTree = "<group>"; };
-		50AC06D917B53F27009C4DEB /* TriangleControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleControlView.m; sourceTree = "<group>"; };
+		50AC06D817B53F27009C4DEB /* DGHTriangleControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGHTriangleControlView.h; sourceTree = "<group>"; };
+		50AC06D917B53F27009C4DEB /* DGHTriangleControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGHTriangleControlView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 		50AC06A617B53F12009C4DEB = {
 			isa = PBXGroup;
 			children = (
-				50AC06B817B53F12009C4DEB /* TriangleController */,
+				50AC06B817B53F12009C4DEB /* DGHTriangleController */,
 				50AC06B117B53F12009C4DEB /* Frameworks */,
 				50AC06B017B53F12009C4DEB /* Products */,
 			);
@@ -70,7 +70,7 @@
 		50AC06B017B53F12009C4DEB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50AC06AF17B53F12009C4DEB /* TriangleController.app */,
+				50AC06AF17B53F12009C4DEB /* DGHTriangleController.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,7 +85,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		50AC06B817B53F12009C4DEB /* TriangleController */ = {
+		50AC06B817B53F12009C4DEB /* DGHTriangleController */ = {
 			isa = PBXGroup;
 			children = (
 				50AC06C117B53F12009C4DEB /* AppDelegate.h */,
@@ -95,19 +95,20 @@
 				50AC06CD17B53F12009C4DEB /* ViewController_iPhone.xib */,
 				50AC06D017B53F12009C4DEB /* ViewController_iPad.xib */,
 				50AC06B917B53F12009C4DEB /* Supporting Files */,
-				50AC06D817B53F27009C4DEB /* TriangleControlView.h */,
-				50AC06D917B53F27009C4DEB /* TriangleControlView.m */,
+				50AC06D817B53F27009C4DEB /* DGHTriangleControlView.h */,
+				50AC06D917B53F27009C4DEB /* DGHTriangleControlView.m */,
 			);
+			name = DGHTriangleController;
 			path = TriangleController;
 			sourceTree = "<group>";
 		};
 		50AC06B917B53F12009C4DEB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				50AC06BA17B53F12009C4DEB /* TriangleController-Info.plist */,
+				50AC06BA17B53F12009C4DEB /* DGHTriangleController-Info.plist */,
 				50AC06BB17B53F12009C4DEB /* InfoPlist.strings */,
 				50AC06BE17B53F12009C4DEB /* main.m */,
-				50AC06C017B53F12009C4DEB /* TriangleController-Prefix.pch */,
+				50AC06C017B53F12009C4DEB /* DGHTriangleController-Prefix.pch */,
 				50AC06C417B53F12009C4DEB /* Default.png */,
 				50AC06C617B53F12009C4DEB /* Default@2x.png */,
 				50AC06C817B53F12009C4DEB /* Default-568h@2x.png */,
@@ -118,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		50AC06AE17B53F12009C4DEB /* TriangleController */ = {
+		50AC06AE17B53F12009C4DEB /* DGHTriangleController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50AC06D517B53F12009C4DEB /* Build configuration list for PBXNativeTarget "TriangleController" */;
+			buildConfigurationList = 50AC06D517B53F12009C4DEB /* Build configuration list for PBXNativeTarget "DGHTriangleController" */;
 			buildPhases = (
 				50AC06AB17B53F12009C4DEB /* Sources */,
 				50AC06AC17B53F12009C4DEB /* Frameworks */,
@@ -130,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = TriangleController;
+			name = DGHTriangleController;
 			productName = TriangleController;
-			productReference = 50AC06AF17B53F12009C4DEB /* TriangleController.app */;
+			productReference = 50AC06AF17B53F12009C4DEB /* DGHTriangleController.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +145,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "D Mac";
 			};
-			buildConfigurationList = 50AC06AA17B53F12009C4DEB /* Build configuration list for PBXProject "TriangleController" */;
+			buildConfigurationList = 50AC06AA17B53F12009C4DEB /* Build configuration list for PBXProject "DGHTriangleController" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -156,7 +157,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				50AC06AE17B53F12009C4DEB /* TriangleController */,
+				50AC06AE17B53F12009C4DEB /* DGHTriangleController */,
 			);
 		};
 /* End PBXProject section */
@@ -185,7 +186,7 @@
 				50AC06BF17B53F12009C4DEB /* main.m in Sources */,
 				50AC06C317B53F12009C4DEB /* AppDelegate.m in Sources */,
 				50AC06CC17B53F12009C4DEB /* ViewController.m in Sources */,
-				50AC06DA17B53F27009C4DEB /* TriangleControlView.m in Sources */,
+				50AC06DA17B53F27009C4DEB /* DGHTriangleControlView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,9 +282,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TriangleController/TriangleController-Prefix.pch";
-				INFOPLIST_FILE = "TriangleController/TriangleController-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TriangleController/DGHTriangleController-Prefix.pch";
+				INFOPLIST_FILE = "TriangleController/DGHTriangleController-Info.plist";
+				PRODUCT_NAME = DGHTriangleController;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -292,9 +293,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TriangleController/TriangleController-Prefix.pch";
-				INFOPLIST_FILE = "TriangleController/TriangleController-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TriangleController/DGHTriangleController-Prefix.pch";
+				INFOPLIST_FILE = "TriangleController/DGHTriangleController-Info.plist";
+				PRODUCT_NAME = DGHTriangleController;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -302,7 +303,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		50AC06AA17B53F12009C4DEB /* Build configuration list for PBXProject "TriangleController" */ = {
+		50AC06AA17B53F12009C4DEB /* Build configuration list for PBXProject "DGHTriangleController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50AC06D317B53F12009C4DEB /* Debug */,
@@ -311,13 +312,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50AC06D517B53F12009C4DEB /* Build configuration list for PBXNativeTarget "TriangleController" */ = {
+		50AC06D517B53F12009C4DEB /* Build configuration list for PBXNativeTarget "DGHTriangleController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50AC06D617B53F12009C4DEB /* Debug */,
 				50AC06D717B53F12009C4DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
