@@ -3,6 +3,8 @@ DGHTriangleControlView
 
 An iOS UIControl(ish) object. Drag a ball around a triangle - use distance from ball center to each vertex as a control value.
 
+Check out the included example project and documentation. Simple, fun, and easy. Anyone can do it!
+
 Usage:<br>
 Import the DGHTriangleControlView.h and .m file into your project (no external dependencies).<br>
 Use the convenience constructor:
